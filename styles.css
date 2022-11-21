@@ -6,7 +6,7 @@ body {
 
 /*header styling*/
 
-.header {
+.header, .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,10 +14,25 @@ body {
   background: #1F2937;
 }
 
-.header-logo {
-  font-size: 24px;
+.hero {
+  justify-content: center;
+  padding-bottom: 80px;
+  gap: 32px;
+}
+
+.header-logo, .hero-main-text {
   color: #F9FAF8;
 }
+
+.header-logo {
+  font-size: 24px;
+}
+
+.hero-main-text {
+  font-size: 48px;
+  font-weight: 800;
+}
+
 
 ul {
   display: flex;
@@ -30,7 +45,41 @@ li {
   margin-left: 16px;
 }
 
+a, .hero-secondary-text {
+  color: #E5E7EB;
+}
+
 a {
   text-decoration: none;
-  color: #E5E7EB;
+}
+
+.header-secondary-text {
+  font-size: 18px;
+}
+
+
+/*hero styling*/
+
+.hero-text {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #3882F6;
+}
+
+button:hover,
+button:active,
+button:focus {
+  box-shadow: 0 0 0 4px white;
 }
