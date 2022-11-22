@@ -184,3 +184,14 @@ figcaption {
 .sign-up-text .aux {
   font-size: 16px;
 }
+
+/*footer styling*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  color: white;
+  background: #1F2937;
+}
