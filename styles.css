@@ -14,7 +14,7 @@ body {
   background: #1F2937;
 }
 
-.header-inside {
+.header-inside, .hero-inside {
   flex: auto;
   display: flex;
   justify-content: space-between;
@@ -71,9 +71,15 @@ a {
 /*hero styling*/
 
 .hero {
-  justify-content: center;
+  padding-top: 40px;
   padding-bottom: 80px;
-  gap: 32px;
+}
+
+@media (max-width: 870px) {
+  .hero-inside {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 .hero-text {
@@ -82,6 +88,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  max-width: 400px;
 }
 
 button {
@@ -97,11 +104,16 @@ button {
 button:hover,
 button:active,
 button:focus {
-  border: 4px solid blue;
+  border: 4px solid orange;
 }
 
 .btn-white-border {
   border: 4px solid white;
+}
+
+#hero-image {
+  width: 400px;
+  height: auto;
 }
 
 /*info styling*/
