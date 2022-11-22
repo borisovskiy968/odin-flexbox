@@ -140,6 +140,7 @@ button:focus {
 .card-image {
   border: 4px solid #3882F6;
   border-radius: 20px;
+  width: 150px;
 }
 
 figure {
